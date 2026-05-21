@@ -1,0 +1,24 @@
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env & secrets
+.env
+.env.*
+
+# Dependencies (if ever added)
+node_modules/
+
+# Build output (if ever added)
+dist/
+build/
