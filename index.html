@@ -345,9 +345,17 @@
           <span class="section-tag">03 / Projects</span>
           <h2>Selected Work</h2>
         </div>
+        <!-- Filter -->
+        <div class="projects-filter reveal-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+
         <div class="projects-grid">
           <!-- Learnova -->
-          <article class="project-card featured reveal-up">
+          <article class="project-card featured reveal-up" data-category="fullstack">
             <div class="project-bg" style="--card-color: #6c63ff"></div>
             <div class="project-content">
               <div class="project-header">
@@ -412,7 +420,7 @@
           </article>
 
           <!-- ClinicMate -->
-          <article class="project-card reveal-up">
+          <article class="project-card reveal-up" data-category="fullstack">
             <div class="project-bg" style="--card-color: #00cba9"></div>
             <div class="project-content">
               <div class="project-header">
@@ -469,7 +477,7 @@
           </article>
 
           <!-- CEIN -->
-          <article class="project-card reveal-up">
+          <article class="project-card reveal-up" data-category="frontend">
             <div class="project-bg" style="--card-color: #f59e0b"></div>
             <div class="project-content">
               <div class="project-header">
@@ -497,7 +505,7 @@
           </article>
 
           <!-- LUMORA -->
-          <article class="project-card reveal-up">
+          <article class="project-card reveal-up" data-category="frontend">
             <div class="project-bg" style="--card-color: #ec4899"></div>
             <div class="project-content">
               <div class="project-header">
@@ -525,7 +533,7 @@
           </article>
 
           <!-- Exclusive -->
-          <article class="project-card reveal-up">
+          <article class="project-card reveal-up" data-category="frontend">
             <div class="project-bg" style="--card-color: #10b981"></div>
             <div class="project-content">
               <div class="project-header">
@@ -548,6 +556,57 @@
               </p>
               <div class="project-tech">
                 <span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>SSR / SSG</span>
+              </div>
+            </div>
+          </article>
+          <!-- E-commerce API -->
+          <article class="project-card reveal-up" data-category="backend">
+            <div class="project-bg" style="--card-color: #ec4899"></div>
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-badge" style="--badge-color: #ec4899">Backend</span>
+                <div class="project-links">
+                  <a href="https://github.com/mhmodfrmwi/E-commerce" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>E-commerce API</h3>
+              <p class="project-subtitle">RESTful E-commerce Backend</p>
+              <p class="project-desc">
+                Complete REST API with JWT auth, RBAC, product &amp; category management,
+                order processing with status tracking, Cloudinary image uploads,
+                and Nodemailer email notifications.
+              </p>
+              <div class="project-tech">
+                <span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+                <span>JWT</span><span>Cloudinary</span><span>Nodemailer</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- MomoDB -->
+          <article class="project-card reveal-up" data-category="backend">
+            <div class="project-bg" style="--card-color: #f59e0b"></div>
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-badge" style="--badge-color: #f59e0b">Systems</span>
+                <div class="project-links">
+                  <a href="https://github.com/mhmodfrmwi/MomoDB" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>MomoDB</h3>
+              <p class="project-subtitle">Custom B-Tree Database Engine</p>
+              <p class="project-desc">
+                From-scratch relational database engine mimicking SQLite internals.
+                B-Tree indexing with O(log n) ops, LRU buffer pool, 4KB disk page
+                blocks, and a full SQL parser for CRUD operations.
+              </p>
+              <div class="project-tech">
+                <span>C++</span><span>B-Tree</span><span>LRU Cache</span>
+                <span>Disk I/O</span><span>CMake</span>
               </div>
             </div>
           </article>
