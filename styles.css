@@ -357,23 +357,29 @@ section { padding: var(--section-gap) 0; }
 #projects { background: var(--bg-2); }
 
 .projects-filter {
-  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 36px;
+  display: flex; gap: 8px; flex-wrap: wrap;
+  margin-bottom: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 6px;
+  width: fit-content;
 }
 .filter-btn {
-  padding: 8px 20px; border-radius: 20px; font-size: .85rem;
-  font-weight: 600; cursor: pointer; border: 1.5px solid var(--border);
-  background: transparent; color: var(--text-2);
-  transition: all .2s ease;
+  padding: 9px 22px; border-radius: 10px;
+  font-size: .85rem; font-weight: 600; cursor: pointer;
+  border: none; background: transparent;
+  color: var(--text-2); transition: all .2s ease;
+  letter-spacing: .01em;
 }
-.filter-btn:hover { border-color: var(--accent); color: var(--text); }
+.filter-btn:hover { color: var(--text); background: rgba(255,255,255,.06); }
 .filter-btn.active {
-  background: var(--accent); border-color: var(--accent);
-  color: #fff; box-shadow: 0 0 16px var(--accent-glow);
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 2px 12px var(--accent-glow);
 }
 
-.project-card.hidden {
-  display: none;
-}
+.project-card.hidden { display: none; }
 
 .projects-grid {
   display: grid;

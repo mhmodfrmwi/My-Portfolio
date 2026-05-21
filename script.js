@@ -114,6 +114,8 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     document.querySelectorAll('.project-card').forEach(card => {
       const match = filter === 'all' || card.dataset.category === filter;
       card.classList.toggle('hidden', !match);
+      // Cards may not have been scroll-revealed yet — force them visible
+      if (match) card.classList.add('revealed');
     });
   });
 });
